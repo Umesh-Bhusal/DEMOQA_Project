@@ -72,16 +72,7 @@ driver.find_element(By.XPATH, "//textarea[@id='currentAddress']").send_keys("mai
 
 #--------------->dropdown<-------------------------------
 
-# # fileupload.click()
-# # file_path = "/home/umesh/Desktop/fintech doc/u.JPG"  # Replace with the full path to your file
-# # fileupload.send_keys(file_path)
-#
-# # Locate the file upload element
-# fileupload = driver.find_element(By.XPATH, "//input[@id='uploadPicture']")
-#
-# # Specify the file path
-# file_path = "/home/umesh/Desktop/fintech doc/u.JPG"  # Replace with the full path to your file
-#
-# # Upload the file by sending the file path
-# fileupload.send_keys(file_path)
+
+#----------->submit button<-----------------------
+driver.find_element(By.XPATH, "//button[@id='submit']").click()
 
