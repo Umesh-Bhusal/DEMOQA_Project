@@ -45,7 +45,7 @@ driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div/div[2]/div[2]/form/
 
 #---------->subject<-----------------------------
 
-# driver.find_element(By.XPATH, "/html/body/div[2]/div/div/div/div[2]/div[2]/form/div[6]/div[2]/div/div/div[1]").send_keys("QA")
+# driver.find_element(By.XPATH,"//input[@id='subjectsInput']").send_keys("QA Learner")
 # time.sleep(3)
 
 #---------->Hobbies<-----------------------
@@ -70,7 +70,14 @@ driver.find_element(By.XPATH, "//textarea[@id='currentAddress']").send_keys("mai
 #------------->State and city<----------------------------
 
 
+
+
+
+
 #--------------->dropdown<-------------------------------
+
+
+
 
 
 #----------->submit button<-----------------------

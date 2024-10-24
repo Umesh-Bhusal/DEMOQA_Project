@@ -29,8 +29,24 @@ alert.accept()
 time.sleep(4)
 
 #On button click, alert will appear after 5 seconds
-driver.find_element(By.XPATH, "//button[@id='timerAlertButton']")
+driver.find_element(By.XPATH, "//button[@id='timerAlertButton']").click()
+time.sleep(8)
 alert=driver.switch_to.alert
 alert.accept()
+
+
+#On button click, confirm box will appear
+driver.find_element(By.XPATH, "//button[@id='confirmButton']").click()
+alert=driver.switch_to.alert
+alert.accept()
+time.sleep(3)
+
+# #On button click, prompt box will appear
+# driver.find_element(By.XPATH, "//button[@id='promtButton']").click()
+
+#frames
+driver.find_element(By.XPATH, "//div[@class='element-list collapse show']//li[@id='item-2']").click()
 time.sleep(4)
+
+
 
