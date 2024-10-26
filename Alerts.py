@@ -49,6 +49,10 @@ alert.accept()
 time.sleep(3)
 
 
+
+
+
+
 #frames
 driver.find_element(By.XPATH, "//div[@class='element-list collapse show']//li[@id='item-2']").click()
 time.sleep(4)

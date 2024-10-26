@@ -29,6 +29,25 @@ driver.find_element(By.XPATH, "//input[@placeholder='Password']").send_keys("adm
 driver.find_element(By.XPATH,"//button[@type='submit']").click()
 time.sleep(4)
 
+#Admin Page
+driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a").click()
+
+# driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a").click()
+# driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a").click()
+time.sleep(4)
+
+#PIM
+
+driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a").click()
+time.sleep(4)
+
+# element= driver.find_element(By.XPATH, "//span[@class='oxd-topbar-body-nav-tab-item']")
+# drp = Select(element)
+# drp.select_by_index(2)
+# driver.find_element(By.XPATH, "//li[@class='--active oxd-topbar-body-nav-tab --parent --visited']//li[2]").click()
+
+# time.sleep(3)
+
 
 
 
