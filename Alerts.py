@@ -42,7 +42,12 @@ alert.accept()
 time.sleep(3)
 
 # #On button click, prompt box will appear
-# driver.find_element(By.XPATH, "//button[@id='promtButton']").click()
+driver.find_element(By.XPATH, "//button[@id='promtButton']").click()
+alert = driver.switch_to.alert
+alert.send_keys("Umesh")  # Enter text into the prompt box
+alert.accept()
+time.sleep(3)
+
 
 #frames
 driver.find_element(By.XPATH, "//div[@class='element-list collapse show']//li[@id='item-2']").click()
