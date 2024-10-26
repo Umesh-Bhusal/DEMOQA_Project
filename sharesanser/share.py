@@ -41,11 +41,11 @@ time.sleep(3)
 
 # Loop to click the "Next" button 65 times
 for _ in range(155):
-    try:
+   # try:
         # Find and click the "Next" button
         next_button = driver.find_element(By.XPATH, "/html/body/div[2]/div/section[2]/div[3]/div/div/div/div[2]/div/div[1]/div[2]/div/div[8]/div/div/div[5]/a[2]")
         next_button.click()
         time.sleep(1)  # Pause to allow the page to load after each click
-    except Exception as e:
-        print(f"Error clicking Next button: {e}")
-        break
+    # except Exception as e:
+    #     print(f"Error clicking Next button: {e}")
+    #     break
