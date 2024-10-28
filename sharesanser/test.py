@@ -18,7 +18,6 @@ time.sleep(3)
 # Enter "NABIL" in the search field and press Enter
 search_box = driver.find_element(By.XPATH, "/html/body/div[2]/div/header/div[1]/div/div[1]/div/div/div[2]/form/div/div/div[1]/input")
 search_box.send_keys("NABIL", Keys.RETURN)
-
 # Optional delay to observe results before quitting
 time.sleep(5)
 
