@@ -39,7 +39,7 @@ for _ in range(scroll_iterations):
 driver.find_element(By.XPATH, "/html/body/div[2]/div/section[2]/div[3]/div/div/div/div[2]/div/div[1]/div[1]/ul/li[8]/a").click()
 time.sleep(3)
 
-# Loop to click the "Next" button 65 times
+# Loop to click the "Next" button 155 times
 for _ in range(155):
    # try:
         # Find and click the "Next" button
