@@ -18,9 +18,7 @@ service = Service(ChromeDriverManager().install())
 # Create a new instance of the Chrome driver
 driver = webdriver.Chrome(service=service)
 
-driver.implicitly_wait(10)  #once you mention code here it will works for all code below not needto write time.sleep in each condition
-# it works based oncondition not time.
-# Navigate to a specific URL
+
 website_url=driver.get("https://www.google.com/")  # Replace with your desired URL
 driver.maximize_window()
 
