@@ -27,6 +27,8 @@ driver.maximize_window()
 driver.find_element(By.XPATH, "//input[@placeholder='Username']").send_keys("Admin")
 driver.find_element(By.XPATH, "//input[@placeholder='Password']").send_keys("admin123")
 driver.find_element(By.XPATH,"//button[@type='submit']").click()
+# admin= driver.find_element(By.XPATH,"//div[@class='oxd-select-text oxd-select-text--focus']").click()
+
 time.sleep(4)
 
 #Admin Page
@@ -36,12 +38,30 @@ driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/
 # driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a").click()
 time.sleep(4)
 
-#PIM
-
-driver.find_element(By.XPATH, "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a").click()
+driver.find_element(By.XPATH, "//span[normalize-space()='Organization']").click()
+driver.find_element(By.XPATH,"//button[normalize-space()='Add']").click()
 time.sleep(4)
 
-# element= driver.find_element(By.XPATH, "//span[@class='oxd-topbar-body-nav-tab-item']")
+# visible_text=driver.find_element(By.LINK_TEXT,"Admin")
+# visible_text.click()
+# time.sleep(4)
+user_role_dropdown = driver.find_element(By.XPATH, "/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[1]/div/div[2]/div/div")  # Adjust name if different
+user_role_dropdown.click()
+visible_text = driver.find_element(By.LINK_TEXT, "Admin")
+visible_text.click()
+
+time.sleep(4)
+
+
+
+#PIM
+
+
+
+
+
+#element= driver.find_element(By.XPATH, "//span[@class='oxd-topbar-body-nav-tab-item']")
+
 # drp = Select(element)
 # drp.select_by_index(2)
 # driver.find_element(By.XPATH, "//li[@class='--active oxd-topbar-body-nav-tab --parent --visited']//li[2]").click()
